@@ -28,6 +28,7 @@ def payment(request):
 
 def tour_guide(request):
     return HttpResponse("<h1>This is Tour Guide's Page.</h1>")
+    return HttpResponse("<h1>This is Tour Guide's interface.</h1>")
 
 
 def emergency(request):
