@@ -3,7 +3,8 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def homePage(request):
-    return HttpResponse("<h1>This is HomePage.</h1>")
+    # return HttpResponse("<h1>This is HomePage.</h1>")
+    return render(request, 'home.html')
 
 
 def sign_up(request):
