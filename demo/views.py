@@ -8,29 +8,36 @@ def homePage(request):
 
 
 def sign_up(request):
-    return HttpResponse("<h1>This is sign up Page.</h1>")
+    # return HttpResponse("<h1>This is sign up Page.</h1>")
+    return render(request, 'sign_up.html')
 
 
 def login(request):
-    return HttpResponse("<h1>This is login Page.</h1>")
+    # return HttpResponse("<h1>This is login Page.</h1>")
+    return render(request, 'login.html')
 
 
 def tourist(request):
-    return HttpResponse("<h1>This is Tourist Page.</h1>")
+    # return HttpResponse("<h1>This is Tourist Page.</h1>")
+    return render(request, 'tourist.html')
 
 
 def tourist_guide(request):
     return HttpResponse("<h1>This is Tourist Page for booking tour Guide.</h1>")
+    # return render(request, 'home.html')
 
 
 def payment(request):
-    return HttpResponse("<h1>This is Tourist Page for payment.</h1>")
+    # return HttpResponse("<h1>This is Tourist Page for payment.</h1>")
+    return render(request, 'payment.html')
 
 
 def tour_guide(request):
-    return HttpResponse("<h1>This is Tour Guide's Page.</h1>")
-    return HttpResponse("<h1>This is Tour Guide's interface.</h1>")
+    # return HttpResponse("<h1>This is Tour Guide's Page.</h1>")
+    # return HttpResponse("<h1>This is Tour Guide's interface.</h1>")
+    return render(request, 'tour_guide.html')
 
 
 def emergency(request):
-    return HttpResponse("<h1>This is Emergency contacts page.</h1>")
+    # return HttpResponse("<h1>This is Emergency contacts page.</h1>")
+    return render(request, 'emergency.html')
