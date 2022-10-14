@@ -20,12 +20,13 @@ import demo.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sign up/', demo.views.sign_up),
+    path('sign_up/', demo.views.sign_up),
     path('login/', demo.views.login),
     path('', demo.views.homePage),
     path('tourist/', demo.views.tourist),
     path('tourist_guide/', demo.views.tourist_guide),
-    path('Emergency/', demo.views.emergency),
+    path('emergency/', demo.views.emergency),
     path('tour_guide/', demo.views.tour_guide),
     path('payment/', demo.views.payment),
+    #path('contact', demo.views.contact),
 ]
