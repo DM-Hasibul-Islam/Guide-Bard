@@ -35,7 +35,7 @@ def tourist(request):
     }
     return render(request, 'tourist.html', dict)
 
-
+#not used
 def tourist_guide(request):
     # return HttpResponse("<h1>This is Tourist Page for booking tour Guide.</h1")
     dict = {

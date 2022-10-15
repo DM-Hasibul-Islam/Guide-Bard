@@ -4,6 +4,22 @@
     Login
 {% endblock title %}
 
-{% block content %}
-   <h1 align="center">Login here.</h1>
-{% endblock content %}
+<!-- for login -->
+{% block content2 %}
+    <form>
+    <h1 align="center">Login</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="email" placeholder="Email" autocomplete="nope">
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Password" autocomplete="new-password">
+      </div>
+      <a href="#" class="link">Forgot Your Password?</a>
+    </div>
+    <div class="action">
+      <button><a href="{% url 'sign_up' %}">Sign-Up</a></button>
+      <button>Sign in</button>
+    </div>
+    </form>
+{% endblock content2 %}

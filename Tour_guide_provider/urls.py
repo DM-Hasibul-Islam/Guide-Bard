@@ -20,13 +20,13 @@ import demo.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sign_up/', demo.views.sign_up),
-    path('login/', demo.views.login),
-    path('', demo.views.homePage),
-    path('tourist/', demo.views.tourist),
-    path('tourist_guide/', demo.views.tourist_guide),
-    path('emergency/', demo.views.emergency),
-    path('tour_guide/', demo.views.tour_guide),
-    path('payment/', demo.views.payment),
-    #path('contact', demo.views.contact),
+    path('sign_up/', demo.views.sign_up, name='sign_up'),
+    path('login/', demo.views.login, name='login'),
+    path('', demo.views.homePage, name='home'),
+    path('tourist/', demo.views.tourist, name='tourist'),
+    path('tourist_guide/', demo.views.tourist_guide, name='tourist_guide'), #not used
+    path('emergency/', demo.views.emergency, name='emergency'),
+    path('tour_guide/', demo.views.tour_guide, name='tour_guide'),
+    path('payment/', demo.views.payment, name='payment'),
+    # path('contact', demo.views.contact),
 ]
