@@ -37,6 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'demo',
     'student',
+    'user',
+    'area_tour_guide',
+    'booking',
+    'emergency',
+    'payment',
+    'review',
+    'tour_guide',
+    'tourist',
+    'tourist_spot',
+
 ]
 
 MIDDLEWARE = [
