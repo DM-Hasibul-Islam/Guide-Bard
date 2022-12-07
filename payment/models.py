@@ -11,5 +11,5 @@ class payment(models.Model):
     booking_id = models.ForeignKey(booking, on_delete=models.CASCADE)
     tg_id = models.ForeignKey(tour_guide, on_delete=models.CASCADE)
     t_id = models.ForeignKey(tourist, on_delete=models.CASCADE)
-    amount = models.IntegerField
-    p_date = models.DateTimeField
+    p_amount = models.IntegerField(null=True)
+    p_date = models.DateTimeField(null=True)

@@ -6,6 +6,6 @@ class booking(models.Model):
     booking_id = models.IntegerField(primary_key=True)
     t_id = models.ForeignKey(tourist, on_delete=models.CASCADE)
     tg_id = models.ForeignKey(tour_guide, on_delete=models.CASCADE)
-    start_time = models.DateTimeField
-    end_time = models.DateTimeField
-    amount = models.IntegerField
+    start_time = models.DateTimeField(null=True)
+    end_time = models.DateTimeField(null=True)
+    amount = models.IntegerField(null=True)

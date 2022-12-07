@@ -7,5 +7,5 @@ class review(models.Model):
     r_id = models.IntegerField(primary_key=True)
     tg_id = models.ForeignKey(tour_guide, on_delete=models.CASCADE)
     t_id = models.ForeignKey(tourist, on_delete=models.CASCADE)
-    review = models.TextField
-    star = models.FloatField
+    review = models.TextField(null=True)
+    star = models.FloatField(null=True)
